@@ -77,7 +77,7 @@ main {
   margin: 0 auto;
   max-width: 1100px;
 }
-
+/* 
 header {
   display: flex;
   margin: 0 auto;
@@ -135,7 +135,7 @@ nav {
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 span {
   color: rgb(240, 0, 0);
