@@ -4,39 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FashionRUs</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/generel.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="spil.html">
-          <img src="svg/Tegnebræt 23.svg" alt="" />
+    <div class="top">
+      <header>
+        <a href="index.html">
+          <p class="text_logo">FashionRUs</p>
         </a>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="">Startside</a></li>
-          <li><a href="spil.html">Spil</a></li>
-          <li><a href="grafik.html">Grafik</a></li>
-          <li><a href="assets.html">Assets</a></li>
-          <li><a href="teknisk.html">Teknisk</a></li>
-        </ul>
-        <!-- <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </div> -->
-      </nav>
-    </header>
+        <nav>
+          <ul class="menu">
+            <li><a href="#categories">Categories </a></li>
+            <li><a href="#brands">Brands</a></li>
+            <li><a href="#seasons">Seasons</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </header>
+    </div>
     <main>
-      <h1>Categories</h1>
+      <h1 id="categories">Categories</h1>
       <div class="category_list_container">
-        <a href="productlist.html" class="category_list_container_items">Accesories</a>
-        <a href="productlist.html" class="category_list_container_items">Apparel</a>
-        <a href="productlist.html" class="category_list_container_items">Footwear</a>
-        <a href="productlist.html" class="category_list_container_items">Free Items</a>
-        <a href="productlist.html" class="category_list_container_items">Personal Care</a>
-        <a href="productlist.html" class="category_list_container_items">Sporting Goods</a>
+        <a href="productlist.html" class="category_list_container_items">Accesories <img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp" alt="" /></a>
+        <a href="productlist.html" class="category_list_container_items">Apparel <img src="https://kea-alt-del.dk/t7/images/webp/640/1573.webp" alt="" /></a>
+        <a href="productlist.html" class="category_list_container_items">Footwear<img src="https://kea-alt-del.dk/t7/images/webp/640/1571.webp" alt="" /></a>
+        <a href="productlist.html" class="category_list_container_items">Free Items <img src="https://kea-alt-del.dk/t7/images/webp/640/1570.webp" alt="" /></a>
+        <a href="productlist.html" class="category_list_container_items">Personal Care <img src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp" alt="" /></a>
+        <a href="productlist.html" class="category_list_container_items">Sporting Goods <img src="https://kea-alt-del.dk/t7/images/webp/640/1583.webp" alt="" /></a>
       </div>
+
+      <div class="linje"></div>
+
+      <h1 id="seasons">Seasons</h1>
+      <div class="grid_1-1-1-1">
+        <div class="category_list_container_items">Winter</div>
+        <div class="category_list_container_items">Spring</div>
+        <div class="category_list_container_items">Summer</div>
+        <div class="category_list_container_items">Fall</div>
+      </div>
+      <div class="linje"></div>
+      <h1 id="brands">Brands</h1>
     </main>
     <footer></footer>
   </body>
