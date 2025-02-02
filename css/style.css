@@ -11,6 +11,10 @@ img {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* fonte */
 /* bold */
 @font-face {
