@@ -4,9 +4,10 @@ let productOverview = document.querySelector(".product_overview");
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
   .then((response) => response.json())
   .then((data) => {
+    console.log("Product data:", data); // Log fetched data
     productOverview.innerHTML = `
     <div>
-          <img src="https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp" alt="puma rygsæk" />
+          <img src="https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp" alt="${data.productdisplayname}" />
         </div>
         <div class="purchase_box">
           <h4> ${data.productdisplayname} </h4>
@@ -17,10 +18,9 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
               Choose a size:
               <select name="size">
                 <option value="OS">Onesize</option>
-            
               </select>
             </label>
-            <div><button>Add to basket</button></div>
+            <div><button type="button">Add to basket</button></div>
           </form>
 
           <section class="product_info">
@@ -34,7 +34,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
               <dd>${data.articletype}</dd>
               <dt>Brand</dt>
               <dd>${data.brandname}</dd>
-              <dt>Intentory number</dt>
+              <dt>Inventory number</dt>
               <dd>${data.id}</dd>
             </dl>
           </section>
