@@ -24,7 +24,7 @@ function showProductList(data) {
             <p> <span class="price_now"> Now </span> ${product.price}</p>
               <p>-${product.discount}%</p>
             </div>
-            <a href="product.html">Shop Now</a>
+            <p class="readmore">Shop Now</p>
           </a>
         </article>
         `

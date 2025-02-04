@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.top {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 header {
   position: sticky;
   z-index: 100;
