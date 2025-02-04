@@ -81,68 +81,19 @@ main {
   margin: 0 auto;
   max-width: 1100px;
 }
-/* 
-header {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: space-between;
-  padding: 13px;
-  font-family: "neue_haas_grotesk_display75Bd";
-  font-size: 20px;
-  z-index: 10;
-  height: 90px;
-  background-color: rgb(245, 245, 245);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+
+.on_sale_prev {
+  display: none;
 }
 
-.top {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-header a {
-  text-decoration: none;
-  margin-left: 2rem;
-}
-
-nav {
-  display: flex;
-  align-items: end;
-}
-
-.menu {
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  list-style: none;
-  font-size: 15px;
-}
-
-.menu a {
-  display: block;
-  padding: 20px;
-  color: rgb(143, 143, 143);
-  text-decoration: none;
-  text-align: end;
-}
-
-.menu a:hover {
-  color: rgb(1, 1, 1);
-  scale: 1.02;
-}
-
-.text_logo {
-  font-size: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
-span {
+.on_sale_prev_true {
   color: rgb(240, 0, 0);
+  display: block;
+  font-family: "neue_haas_grotesk_display75Bd";
+}
+
+.price_now {
+  font-family: "neue_haas_grotesk_display75Bd";
 }
 
 /* kategori styling */
@@ -198,16 +149,32 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.product:hover {
+.product_card:hover {
   scale: 1.02;
   transition: all 0.2s ease;
 }
 
-.discount p:last-child {
+.on_sale p:last-child {
   background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 0, 0));
   padding: 0.3rem;
   border-radius: 5px;
   text-align: end;
+}
+
+.on_sale_label {
+  visibility: hidden;
+}
+
+.is_on_sale_label {
+  visibility: visible;
+}
+
+.on_sale {
+  visibility: hidden;
+}
+
+.is_on_sale {
+  visibility: visible;
 }
 
 .linje {
@@ -220,13 +187,13 @@ p {
 }
 
 /* forskellige indstillinger for tingene */
-.product-normal .discount {
+/* .product-normal .on_sale {
   display: none;
 }
 
 .product-normal span {
   display: none;
-}
+} */
 
 .product-onsale_soldout img {
   opacity: 0.5;
@@ -242,19 +209,24 @@ p {
   color: rgb(255, 255, 255);
 }
 
-.centered {
+.sold_out {
   position: absolute;
+
   font-family: "neue_haas_grotesk_disp55roman";
   font-size: 16px;
-
   background-color: rgb(198, 198, 198);
   padding: 5px;
   top: 8%;
   left: 15%;
   transform: translate(-50%, -50%);
+  visibility: hidden;
 }
 
-.product-soldout .discount {
+.sold_out_true {
+  visibility: visible;
+}
+
+.product-soldout .on_sale {
   display: none;
 }
 
