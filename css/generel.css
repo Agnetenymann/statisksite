@@ -48,10 +48,15 @@ grid_1-1-1-1_index {
   margin-right: 1rem;
 }
 
-.discount {
+.on_sale {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
+}
+
+.price {
+  display: flex;
+  gap: 1ch;
 }
 
 @media (min-width: 800px) {
