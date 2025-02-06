@@ -11,7 +11,7 @@ function showList(products) {
   products
     .map((product) => {
       markup += `
-        <a href="productlist.html?category=${product.category}" class="category_list_container_items"> ${product.category} </a>
+        <a href="productlist.html?category=${product.category}" class="category_list_container_items pulse"> ${product.category} </a>
       `;
     })
     .join("");

@@ -11,7 +11,7 @@
     scale: 1;
   }
   to {
-    scale: 0.9;
+    scale: 0.99;
   }
 }
 
@@ -32,7 +32,15 @@
   margin: 0 auto;
 }
 
-grid_1-1-1-1_index {
+.seasons_list_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.brands_list_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -48,10 +56,13 @@ grid_1-1-1-1_index {
   margin-right: 1rem;
 }
 
-.on_sale {
+.brand_img_bio {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 4fr;
   gap: 10px;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
 }
 
 .price {
@@ -72,10 +83,18 @@ grid_1-1-1-1_index {
     gap: 10px;
   }
 
-  .grid_1-1-1-1_index {
+  .seasons_list_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+  }
+
+  .brands_list_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .product_overview {
