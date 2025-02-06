@@ -105,28 +105,48 @@ main {
   font-size: 20px;
   border: solid rgb(156, 156, 156) 1px;
   border-radius: 7px;
-  padding: 10px;
+  padding: 30px 25px 30px 25px;
   transition: ease-in;
 }
 .category_list_container_items:hover {
   scale: 1.02;
   transition: all 0.2s ease;
+  color: rgb(33, 36, 216);
+  border: solid 2px rgb(33, 36, 216);
+}
+
+.product_list_knap:hover {
+  scale: 1.02;
+  transition: all 0.2s ease;
+  color: rgb(33, 36, 216);
 }
 
 h1 {
   font-family: "neue_haas_grotesk_display65Md";
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 34px;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  font-size: 42px;
   margin-left: 1rem;
   text-align: center;
+  text-shadow: 1px 1px 2px rgb(33, 36, 216);
+}
+
+h5 {
+  font-family: "neue_haas_grotesk_displa95Blk";
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 80px;
+  margin-left: 1rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 45px rgb(33, 36, 216);
 }
 
 h3 {
   font-family: "neue_haas_grotesk_display65Md";
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 h4 {
@@ -149,16 +169,59 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.productPrice {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.productPrice2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 16px;
+}
+
+.originalPrice {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 20px;
+  text-decoration: line-through;
+  color: rgb(101, 101, 101);
+}
+
+.discountPrice {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  margin-left: 1rem;
+}
+
+.originalPrice2 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 16px;
+  text-decoration: line-through;
+  color: rgb(101, 101, 101);
+}
+
+.discountPrice2 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 16px;
+  color: rgb(255, 0, 0);
+}
+
 .product_card:hover {
+  transition: 0.3s;
   scale: 1.02;
   transition: all 0.2s ease;
 }
 
 .on_sale p:last-child {
   background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 0, 0));
-  padding: 0.3rem;
+  padding: 0.25rem;
   border-radius: 5px;
   text-align: end;
+  margin-left: 10rem;
 }
 
 .on_sale_label {
@@ -171,6 +234,12 @@ p {
 
 .on_sale {
   visibility: hidden;
+}
+
+.on_sale p {
+  font-family: "neue_haas_grotesk_display65Md";
+  margin-bottom: 0.5rem;
+  font-size: 16px;
 }
 
 .is_on_sale {
@@ -186,14 +255,13 @@ p {
   margin-bottom: 5rem;
 }
 
-/* forskellige indstillinger for tingene */
-/* .product-normal .on_sale {
-  display: none;
+.brand_img {
+  width: 70%;
+  margin-left: 1rem;
 }
 
-.product-normal span {
-  display: none;
-} */
+.purchase_box {
+}
 
 .product-onsale_soldout img {
   opacity: 0.5;
@@ -222,6 +290,30 @@ p {
   visibility: hidden;
 }
 
+.brødkrumme {
+  margin-top: 1rem;
+}
+
+.brødkrumme p {
+  font-family: "neue_haas_grotesk_display75Bd";
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden2 {
+  display: none;
+}
+
+.visible2 {
+  display: block;
+}
+
 .sold_out_true {
   visibility: visible;
 }
@@ -236,6 +328,7 @@ p {
 
 .product_overview {
   margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .purchase_box {
@@ -261,27 +354,26 @@ p {
 
 h2 {
   font-family: "neue_haas_grotesk_display65Md";
-  margin-top: 1rem;
   margin-bottom: 0.5rem;
   color: darkgrey;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 dt {
   font-family: "neue_haas_grotesk_disp55roman";
   margin-bottom: 0.5rem;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 dd {
   font-family: "neue_haas_grotesk_displ36ThIt";
   margin-bottom: 1rem;
-  margin-left: 0.5rem;
-  font-size: 20px;
+  margin-left: 0.2rem;
+  font-size: 18px;
 }
 
 .product_info {
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-left: 2rem;
 }
 
@@ -296,21 +388,34 @@ label {
   font-size: 20px;
 }
 
-.purchase_box button {
+.purchase_box .add_to_basket p {
   border-radius: 5px;
   padding: 10px 25px 10px 25px;
+  width: 200px;
   background-color: white;
   margin-top: 1rem;
   font-family: "neue_haas_grotesk_display75Bd";
   font-size: 16px;
   border: solid 2px black;
+  text-align: center;
+  transition: 0.3s;
 }
 
-button:hover {
-  scale: 1.03;
-  transition: all 0.1s ease;
+.add_to_basket p:hover {
+  transition: 0.3s;
+  scale: 1.02;
   color: rgb(33, 36, 216);
   border: solid 2px rgb(33, 36, 216);
+}
+
+.add_to_basket a {
+  margin: 0;
+}
+
+.no_scale p:hover {
+  scale: 1;
+  color: rgb(190, 190, 190);
+  border: solid 2px rgb(190, 190, 190);
 }
 
 h6 {
@@ -334,15 +439,60 @@ a {
   text-decoration: none;
 }
 
+.product_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 610px;
+  border: 1px solid black;
+}
+
+.info_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: 250px;
+}
+
+.product_card img {
+  border-bottom: 1px solid rgb(187, 186, 186);
+}
+.readmore {
+  font-family: "neue_haas_grotesk_display75Bd";
+  font-size: 16px;
+  color: rgb(33, 36, 216);
+  text-decoration: none;
+  text-align: end;
+  text-decoration: underline;
+}
+
+.middle {
+  place-self: center;
+}
+
 @media (min-width: 800px) {
   h1 {
     margin-left: 0rem;
-    font-size: 50px;
-    margin-top: 3rem;
+    font-size: 60px;
+    margin-top: 8rem;
     margin-bottom: 3rem;
+    text-shadow: 1px 1px 2px rgb(33, 36, 216);
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 18px;
+    margin-top: 1rem;
+  }
+
+  h5 {
+    font-family: "neue_haas_grotesk_displa95Blk";
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 170px;
+    margin-left: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 45px rgb(33, 36, 216);
   }
 }

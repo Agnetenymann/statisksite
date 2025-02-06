@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FashionRUs</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/menu.css" />
+    <!-- ./ tager fat i roden af det bibliotek jeg står i lige nu -->
+    <!-- defer gør at js. først begynder når hele DOM er loadet -->
+    <script src="./produkt.js" defer></script>
   </head>
   <body>
     <header>
@@ -28,18 +31,20 @@
         </div>
       </nav>
     </header>
+
     <main>
-      <div class="product_overview"></div>
+      <h1 id="brands">Brands</h1>
+      <div class="brands_list_container"></div>
     </main>
 
     <div class="product_list_knap">
-      <a href="productlist.html">
-        <h6>Continue shopping!</h6>
+      <a href="brands.html">
+        <h6>Back to top!</h6>
       </a>
     </div>
-
     <h5>FashionRUs</h5>
+    <footer></footer>
     <script src="burger.js"></script>
-    <script src="produkt.js"></script>
+    <script src="brands.js"></script>
   </body>
 </html>
