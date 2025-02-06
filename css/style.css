@@ -121,6 +121,11 @@ main {
   color: rgb(33, 36, 216);
 }
 
+.product_list_knap {
+  display: flex;
+  align-items: end;
+}
+
 h1 {
   font-family: "neue_haas_grotesk_display65Md";
   margin-top: 4rem;
@@ -420,8 +425,8 @@ label {
 
 h6 {
   text-align: center;
-  place-self: center;
   width: fit-content;
+  align-items: center;
   border-radius: 8px;
   padding: 10px 15px 10px 15px;
   background-color: white;
